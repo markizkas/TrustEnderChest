@@ -1,0 +1,76 @@
+# Конфигурация HolyEnderChest
+# Настройки заблокированных предметов
+# Лимиты предметов (0 = запрещено, -1 = без лимита)
+item-limits:
+  DRAGON_EGG: 1
+  BEDROCK: 0 # полностью запрещено
+
+# Настройки базы данных
+mysql:
+  # Тип базы данных sqlite или mysql
+  type: "sqlite"
+  host: "localhost"
+  user: "root"
+  database: ""
+  password: ""
+  port: 3306
+
+# Настройки улучшения
+upgrade-settings:
+  # Включить/Выключить улучшение за сапфиры
+  upgrade_sapphire: true
+  # Включить/Выключить улучшение за опыт
+  upgrade_exp: true
+  # Звук при успешном улучшении
+  sound_success: BLOCK_NOTE_BLOCK_PLING
+  # Звук при неудачном улучшении
+  sound_fail: BLOCK_ANVIL_PLACE
+  # На сколько умножается стоимость улучшения
+  upgrade_multiplier: 1.0
+  # Цена улучшения слота за опыт
+  price_unlock_exp: 100
+  # Цена улучшения слота за сапфиры
+  price_unlock_sapphire: 50
+  # Название инвентаря
+  title: "Эндер-сундук"
+  # Размер инвентаря (9, 18, 27, 36, 45, 54)
+  inventory_size: 54
+  # Количество слотов разблокированных по умолчанию
+  default_unlock: 27
+  
+  # Настройка следующего разблокирования слота
+  unlock_slot:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    name: "&7"
+    lore:
+      - " #FC6F00Разблокировать слот за"
+      - " #FC6F00▶ #03F700%exp% #5DF853ур. опыта &7(Левый клик)"
+      - " #FC6F00▶ #F512D1%sapphire% #F856E4сапфиров☀ &7(Правый клик)"
+      - ""
+      - " &7* &oДействует до конца вайпа"
+  
+  lock_slot:
+    material: ORANGE_STAINED_GLASS_PANE
+    name: "&7"
+    lore:
+      - ""
+      - " #FF9949Разблокировать"
+      - " #FF9949слоты можно только"
+      - " #FF9949последовательно"
+      - ""
+
+# Сообщения
+messages:
+  no_exp: "#F5201C▶ &fУ Вас недостаточный уровень, вам нужно иметь #03F700%exp% уровень опыта"
+  no_sapphire: "#F5201C▶ &fУ Вас недостаточно средств, вам нужно #F512D1%sapphire% сапфиров ☀"
+  success: "#03F700▶ &fВы успешно улучшили слот"
+  permission: "#F5201C▶ &fУ Вас нет прав!"
+  player: "#F5201C▶ &fКоманда только для игроков!"
+  all_slots_unlocked: "#F5201C▶ &fУ игрока уже разблокированы все доступные слоты!"
+  not_enough_available: "#F5201C▶ &fНельзя выдать больше слотов, чем осталось. Доступно: #03F700%available%"
+  slots_given: "#F5201C▶ &fВы выдали #03F700%slots% &fслотов игроку &e%player%"
+  invalid_number: "#F5201C▶ &fКоличество слотов должно быть числом!"
+  player_not_found: "#F5201C▶ &fИгрок не найден в базе данных!"
+  usage_unlock: "#F5201C▶ &fИспользование: /ec unlock <ник> <кол-во>"
+  item_banned: "#F5201C▶ &fЭтот предмет запрещено класть в эндер-сундук"
+  item_limit_reached: "#F5201C▶ &fВы не можете положить больше %limit% этого предмета!"
