@@ -1,13 +1,12 @@
-name: FichaEnderChest
-main: ru.minestash.holyenderchest.HolyEnderChest
+name: TrustEnderChest
+main: fun.lonix.holyenderchest.HolyEnderChest
 version: 1.0
 api-version: 1.16
 author:
-  - MineStash
-  - FichaDev
+  - markizkas
+  - Lonix
 website:
-  - https://t.me/minestash
-  - https://t.me/FichaDev
+  - https://t.me/TrustDevs
 depend:
   - PlayerPoints
 commands:
@@ -35,4 +34,5 @@ permissions:
     default: op
   minestashenderchestupgrade.ec.take:
     description: Позволяет забирать предметы из чужого эндер-сундука
+
     default: op
