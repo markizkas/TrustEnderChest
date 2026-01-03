@@ -1,4 +1,5 @@
-# Конфигурация HolyEnderChest
+# https://t.me/TrustDevs
+# Конфигурация TrustEnderChest
 # Настройки заблокированных предметов
 # Лимиты предметов (0 = запрещено, -1 = без лимита)
 item-limits:
@@ -74,3 +75,4 @@ messages:
   usage_unlock: "#F5201C▶ &fИспользование: /ec unlock <ник> <кол-во>"
   item_banned: "#F5201C▶ &fЭтот предмет запрещено класть в эндер-сундук"
   item_limit_reached: "#F5201C▶ &fВы не можете положить больше %limit% этого предмета!"
+
